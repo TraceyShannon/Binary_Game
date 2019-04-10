@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.binary-display {
+  background: lightblue;
+  font-size: 4em;
+  padding: 1.2em;
+  text-align: center;
+}
+
+.number-choices {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.choice {
+  background: coral;
+  border-radius: 2em;
+  box-shadow: 0 0.5em 1em coral;
+  width: 10%;
+  height: 5em;
+  margin: 2em;
+  color: #ddd;
+  padding: 2em;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  top: 2em;
+}
+
+.choice:hover {
+  top: 2.1em;
+  box-shadow: 0 0.4em 0.8em coral;
+}
+
+.choice:active {
+  top: 2.5em;
+  box-shadow: 0 0.2em 0.4em coral;
+}
+
+.right-or-wrong {
+  color: #ddd;
+  text-align: center;
+  border: solid 2px coral;
+  border-radius: 2em;
+  display: none;
+  width: 20%;
+  padding: 1em;
+  font-size: 2em;
+  margin: 3em auto;
+}
+
+.next-btn {
+  display: none;
+}
+
+.next {
+  border: solid 2px coral;
+  border-radius: 2em;
+  color: #ddd;
+  cursor: pointer;
+  padding: 2em;
+  margin: 4em auto;
+  text-align: center;
+  transition: 0.2s;
+  width: 10%;
+}
+
+.next:hover {
+  color: coral;
+  background: #ddd;
+}
+
+@media only screen and (max-width: 1100px) {
+  .choice {
+    width: 35%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .choice {
+      width: 50%;
+  }
+
+  .next {
+    width: 35%;
+  }
+
+  .right-or-wrong {
+    width: 35%;
+  }
+}
